@@ -1,4 +1,4 @@
-<nav class="flex items-center bg-blue-200  py-5" aria-label="Global">
+<nav class=" flex items-center bg-blue-200  py-2 " aria-label="Global">
     <div class="flex ml-2">
         <a href="#" class="-m-1.5 p-1.5 bg-gray-300 rounded-xl ml-3 mr-2">
             <span class="sr-only">Portfolio Builder</span>
@@ -43,7 +43,7 @@
     </div>
     <div class="hidden lg:flex lg:gap-x-12 mt-2 mb-0">
         @if (Route::has('login'))
-            <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
+            <div class="hidden top-0 right-0 px-6 py-4  sm:block">
                 @auth
                     <a href="{{ url('/dashboard') }}"
                         class="text-sm text-gray-700 dark:text-gray-500 underline">Dashboard</a>
@@ -59,10 +59,6 @@
                 @endauth
             </div>
         @endif
-
-        <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
-
-        </div>
     </div>
 
 </nav>

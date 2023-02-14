@@ -13,13 +13,26 @@
 
     @include('_navbar')
 
-    <div class="container flex ">
-        <div class="left bg-gray-600 py-8 px-4 mt-3 ml-10 mr-2 w-1/2 rounded-xl">
-            <h1>Image</h1>
+    <div class="container flex">
+        <div class="left py-8 px-4 mt-3 ml-10 mr-2 w-1/2 rounded-xl">
+            <h1><img src="/images/logo.png" alt="Image"></h1>
+            <div class="aboutMe text-center">
+                Hello this is Sandeep.
+            </div>
         </div>
-        <div class="right bg-purple-400 py-8 px-8 mt-3 ml-2 w-3/4 rounded-xl">
-            <h1>This is the main content of the Portfolio</h1>
+        <div class="right py-8 px-8 mt-3 ml-2 w-3/4 rounded-xl">
+            <div class="content text-3xl mx-0 my-32">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam, quisquam reiciendis sit beatae
+                obcaecati odio. Nesciunt, nulla delectus corporis rerum quae vel tempora consectetur officiis assumenda
+                nemo sit asperiores quis qui laboriosam. Deleniti dolores delectus autem exercitationem pariatur! Facere
+                dolor dolore provident cum inventore doloribus quis! Est, nemo! Placeat cumque ad sint quae architecto,
+                impedit maxime!
+            </div>
         </div>
+    </div>
+
+    <div class="footer w-full bg-black text-white text-center mt-4 py-5">
+        <h1>This is the content of the footer</h1>
     </div>
 
 </body>
