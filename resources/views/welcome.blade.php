@@ -20,8 +20,11 @@
                 Hello this is Sandeep.
             </div>
         </div>
-        <div class="right py-8 px-8 mt-3 ml-2 w-3/4 rounded-xl">
-            <div class="content text-3xl mx-0 my-32">
+        <div class="right py-8 px-8 mt-3 ml-2 w-3/4 rounded-xl bg-purple-300">
+            <div class="contentHeader text-xl underline">
+                <a href="/dashboard"><h1>Build Your WebPortfolio Now</h1></a>
+            </div>
+            <div class="content text-3xl mx-0 my-14">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam, quisquam reiciendis sit beatae
                 obcaecati odio. Nesciunt, nulla delectus corporis rerum quae vel tempora consectetur officiis assumenda
                 nemo sit asperiores quis qui laboriosam. Deleniti dolores delectus autem exercitationem pariatur! Facere
