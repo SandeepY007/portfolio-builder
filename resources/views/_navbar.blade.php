@@ -32,13 +32,13 @@
                     <a href="{{ url('/dashboard') }}"
                         class="text-sm text-gray-700 dark:text-gray-500 underline">Dashboard</a>
                 @else
-                    <button class="border border-blue-500 width-full px-5 bg-blue-500 rounded-xl"><a
+                    <button class="border border-black width-full px-5 bg-gray-300 rounded-xl"><a
                             href="{{ route('login') }}">Log
                             in</a></button>
 
                     @if (Route::has('register'))
                         <a href="{{ route('register') }}"
-                            class="border border-blue-500 width-full px-5 bg-blue-500 rounded-xl">Register</a>
+                            class="border width-full px-5 border-black bg-gray-300 rounded-xl">Register</a>
                     @endif
                 @endauth
             </div>
