@@ -23,7 +23,7 @@
 
                                 <tr>
                                     <td class="px-2 py-3 border-b">
-                                        <div class="border border-black rounded-xl px-10 py-10 mb-2 flex bg-gray-300">
+                                        <div class="border border-black rounded-xl px-10 py-10 mb-2 flex">
                                             <img src="\images\9993-name-proile-icon-animation-stroke.gif" alt="Gif"
                                                 class="w-20 rounded-xl">
                                             <a href="/introduction"
@@ -31,7 +31,7 @@
                                         </div>
                                     </td>
                                     <td class="px-2 py-3 border-b">
-                                        <div class="border border-black rounded-xl px-10 py-10 mb-2 flex bg-gray-300">
+                                        <div class="border border-black rounded-xl px-10 py-10 mb-2 flex ">
                                             <img src="\images\42930-objective-communication.gif" alt="Gif"
                                                 class="w-20 rounded-xl">
                                             <a href="/objective"
@@ -41,7 +41,7 @@
                                 </tr>
                                 <tr>
                                     <td class="px-2 py-3 border-b">
-                                        <div class="border border-black rounded-xl px-10 py-10 mb-2 flex bg-gray-300">
+                                        <div class="border border-black rounded-xl px-10 py-10 mb-2 flex ">
                                             <img src="\images\137359-experience.gif" alt="Gif"
                                                 class="w-20 rounded-xl">
                                             <a href="/experience"
@@ -49,7 +49,7 @@
                                         </div>
                                     </td>
                                     <td class="px-2 py-3 border-b">
-                                        <div class="border border-black rounded-xl px-10 py-10 mb-2 flex bg-gray-300">
+                                        <div class="border border-black rounded-xl px-10 py-10 mb-2 flex ">
                                             <img src="\images\99312-developer-skills.gif" alt="Gif"
                                                 class="w-20 rounded-xl">
                                             <a href="/skill"
@@ -59,14 +59,14 @@
                                 </tr>
                                 <tr>
                                     <td class="px-2 py-3 border-b">
-                                        <div class="border border-black rounded-xl px-10 py-10 mb-2 flex bg-gray-300">
+                                        <div class="border border-black rounded-xl px-10 py-10 mb-2 flex ">
                                             <img src="\images\69437-academic-hut-banner.gif" alt="Gif" class="w-20 rounded-xl">
                                             <a href="/academic"
                                                 class="button bg-blue-300 border border-black rounded-xl py-10 ml-3 w-full text-center">Academics</a>
                                         </div>
                                     </td>
                                     <td class="px-2 py-3 border-b">
-                                        <div class="border border-black rounded-xl px-10 py-10 mb-2 flex bg-gray-300">
+                                        <div class="border border-black rounded-xl px-10 py-10 mb-2 flex ">
                                             <img src="\images\35684-business-team-discusses-project.gif" alt="Gif"
                                                 class="w-20 rounded-xl">
                                             <a href="/projects"

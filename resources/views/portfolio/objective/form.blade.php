@@ -1,7 +1,7 @@
 <div class="mb-6">
     <label for="objective" class="block mb-2 uppercase font-bold text-xs text-gray-700">Name</label>
-    <input type="text" name="objective" id="objective" class="border border-gray-400 p-2 w-full"
-        value="{{ $objs->objective }}">
+    <textarea name="objective" id="objective" class="border border-gray-400 p-2 w-full"
+        value="">{{ old('objective', $objs->objective) }}</textarea>
     <span class="text-sm text-red-500">
         @error('objective')
             {{ $message }}

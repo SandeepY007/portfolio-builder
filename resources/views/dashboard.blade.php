@@ -1,9 +1,9 @@
 <x-app-layout>
-    <div class="py-12 ">
-        <div class="max-w-7xl mx-auto py-4 sm:px-6 lg:px-8 border border-black rounded-xl">
+    <div class="max-w-7xl mx-auto mt-7 mb-7 py-4 sm:px-6 lg:px-8 border border-black bg-white rounded-xl">
 
 
-            Introduction:-
+        Introduction:-
+        @if ($user->introduction->count() > 0)
             <div class="rounded-xl mt-3 mb-3 py-10 flex bg-black text-white">
                 @foreach ($user->introduction as $intro)
                     <img src="images/{{ $intro->image }}" alt="images" class="w-20 rounded-xl ml-2 mr-2">
@@ -25,7 +25,15 @@
                     </div>
                 @endforeach
             </div>
-            Objective:-
+        @else
+            <div class="rounded-xl mt-3 mb-3 py-10 flex bg-black text-white">
+                <h1 class="ml-4">No Introduction available</h1>
+            </div>
+        @endif
+
+
+        Objective:-
+        @if ($user->objective->count() > 0)
             <div class="rounded-xl mt-3 mb-4 py-10  bg-black text-white">
                 <div class="px-3 flex">
                     @foreach ($user->objective as $obj)
@@ -33,8 +41,16 @@
                     @endforeach
                 </div>
             </div>
+        @else
+            <div class="rounded-xl mt-3 mb-4 py-10  bg-black text-white">
+                    <h1 class="ml-4">No Objective Available</h1>
+            </div>
 
-            Academics:-
+
+        @endif
+
+        Academics:-
+        @if ($user->academic->count() > 0)
             <div class="rounded-xl mt-3 mb-2 py-10 flex bg-black text-white">
                 <table class="table-auto w-full">
                     <thead>
@@ -59,8 +75,14 @@
                     @endforeach
                 </table>
             </div>
+        @else
+            <div class="rounded-xl mt-3 mb-2 py-10 flex bg-black text-white">
+                <h1 class="ml-4">No Academics Available</h1>
+            </div>
+        @endif
 
-            Experience:-
+        Experience:-
+        @if ($user->experience->count() > 0)
             <div class="rounded-xl mt-3 mb-2 py-10 flex bg-black text-white">
                 <table class="table-auto w-full">
                     <thead>
@@ -89,29 +111,70 @@
                     </tbody>
                 </table>
             </div>
+        @else
+            <div class="rounded-xl mt-3 mb-2 py-10 flex bg-black text-white">
+                <h1 class="ml-4">No Experience Available</h1>
+            </div>
+        @endif
 
-            Skill:-
-            <div class="rounded-xl mt-3 py-10 flex bg-black text-white">
+        Skill:-
+        @if ($user->skill->count() > 0)
+            <div class="rounded-xl mt-3 mb-3 py-10 flex bg-black text-white">
                 <table class="table-auto w-full">
                     <thead>
                         <tr>
-                            <th class="py-2 px-3 bg-gray-200 border-b-2">Skill</th>
+                            <th class="py-2 px-3 bg-gray-200 border-b-2 text-left">Skill</th>
+                            <th class="py-2 px-3 bg-gray-200 border-b-2 text-left">Skill Status</th>
                         </tr>
                     </thead>
                     <tbody>
 
                         @foreach ($user->skill as $skill)
-                            <tr class="flex justify-center">
+                            <tr>
                                 <td class="px-2 py-3 border-b">{{ $skill->name }}</td>
+                                <td class="px-2 py-3 border-b">{{ $skill->status }}</td>
                             </tr>
                         @endforeach
                     </tbody>
                 </table>
             </div>
+        @else
+            <div class="rounded-xl mt-3 mb-3 py-10 flex bg-black text-white">
+                <h1 class="ml-4">No Skill available</h1>
+            </div>
+        @endif
 
-
-
-
+        Project:-
+        @if ($user->project->count() > 0)
+            <div class="rounded-xl mt-3 mb-2 py-10 flex bg-black text-white">
+                <table class="table-auto w-full">
+                    <thead>
+                        <tr>
+                            <th class="py-2 px-3 bg-gray-200 border-b-2 text-left">Project Name</th>
+                            <th class="py-2 px-3 bg-gray-200 border-b-2 text-left">Language</th>
+                            <th class="py-2 px-3 bg-gray-200 border-b-2 text-left">Framework</th>
+                            <th class="py-2 px-3 bg-gray-200 border-b-2 text-left">Project Url</th>
+                            <th class="py-2 px-3 bg-gray-200 border-b-2 text-left">Project Reference</th>
+                        </tr>
+                    </thead>
+                    @foreach ($user->project as $project)
+                        <tbody>
+                            <tr>
+                                <td class="px-2 py-3 border-b">{{ $project->project_name }}</td>
+                                <td class="px-2 py-3 border-b">{{ $project->language }}</td>
+                                <td class="px-2 py-3 border-b">{{ $project->framework }}</td>
+                                <td class="px-2 py-3 border-b">{{ $project->project_url }}</td>
+                                <td class="px-2 py-3 border-b">{{ $project->project_reference }}</td>
+                            </tr>
+                        </tbody>
+                    @endforeach
+                </table>
+            </div>
+        @else
+        <div class="rounded-xl mt-3 mb-2 py-10 flex bg-black text-white">
+            <h1 class="ml-4">No Projects available</h1>
         </div>
+        @endif
     </div>
+
 </x-app-layout>

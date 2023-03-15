@@ -29,6 +29,7 @@ class SkillController extends Controller
      */
     public function create(Skill $skill)
     {
+        
         return view('portfolio.skill.create', compact('skill'));
     }
 
@@ -40,9 +41,11 @@ class SkillController extends Controller
      */
     public function store(SkillRequest $request, Skill $skill)
     {
+
         $skill->create([
             'user_id'=>Auth::id(),
-            'name'=>$request->name
+            'name'=>$request->name,
+            'status'=>$request->status
         ]);
 
         return to_route('skill.index');

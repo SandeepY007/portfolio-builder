@@ -23,6 +23,7 @@
                         <tr>
                             <th class="py-2 px-3 bg-gray-200 border-b-2">ID</th>
                             <th class="py-2 px-3 bg-gray-200 border-b-2">Skill</th>
+                            <th class="py-2 px-3 bg-gray-200 border-b-2">Skill Status</th>
                             <th class="py-2 px-3 bg-gray-200 border-b-2">Edit</th>
                             <th class="py-2 px-3 bg-gray-200 border-b-2">Delete</th>
                         </tr>
@@ -34,8 +35,9 @@
                                 <td class="px-2 py-3 border-b">{{ $skill->id }}</td>
                                 <td class="px-2 py-3 border-b"><a
                                         href="{{ route('skill.show', $skill->id) }}">{{ $skill->name }}</a></td>
-                                <td class="px-2 py-3 border-b"><a
-                                        href="{{ route('skill.edit', $skill->id) }}">Edit</a></td>
+                                <td class="px-2 py-3 border-b">{{ $skill->status }}</td>
+                                <td class="px-2 py-3 border-b"><a href="{{ route('skill.edit', $skill->id) }}">Edit</a>
+                                </td>
                                 <td class="px-2 py-3 border-b">
                                     <form action="{{ route('skill.destroy', $skill->id) }}" method="post">
                                         @csrf
