@@ -17,7 +17,7 @@ class ExperienceController extends Controller
     public function index()
     {
         return view('portfolio.experience.index',[
-            'experiences'=>Experience::all()
+            'experiences'=>Experience::where('user_id', '=', Auth::id())->get()
         ]);
     }
 

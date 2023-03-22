@@ -17,7 +17,7 @@ class ProjectController extends Controller
     public function index()
     {
         return view('portfolio.project.index',[
-            'projects'=>Project::all()
+            'skills'=>Project::where('user_id', '=', Auth::id())->get()
         ]);
     }
 

@@ -18,7 +18,7 @@ class SkillController extends Controller
     public function index()
     {
         return view('portfolio.skill.index', [
-            'skills'=>Skill::all()
+            'skills'=>Skill::where('user_id', '=', Auth::id())->get()
         ]);
     }
 
@@ -27,10 +27,10 @@ class SkillController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create(Skill $skill)
+    public function create(Skill $skills)
     {
         
-        return view('portfolio.skill.create', compact('skill'));
+        return view('portfolio.skill.create', compact('skills'));
     }
 
     /**

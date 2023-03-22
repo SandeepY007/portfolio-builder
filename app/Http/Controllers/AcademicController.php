@@ -18,7 +18,7 @@ class AcademicController extends Controller
     public function index()
     {
         return view('portfolio.academic.index', [
-            'academics'=>Academic::all()
+            'academics'=>Academic::where('user_id', '=', Auth::id())->get()
         ]);
     }
 

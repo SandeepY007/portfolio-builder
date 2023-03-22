@@ -17,7 +17,7 @@ class IntroductionController extends Controller
     public function index()
     {
         return view('portfolio.introduction.index', [
-            'intros' => Introduction::all()
+            'intros' => Introduction::where('user_id', '=', Auth::id())->get()
         ]);
     }
 

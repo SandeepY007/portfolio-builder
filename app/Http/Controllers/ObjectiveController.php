@@ -18,7 +18,7 @@ class ObjectiveController extends Controller
     {
         $obj = new Objective();
         return view('portfolio.objective.index', [
-            'objs' => Objective::all()
+            'objs' => Objective::where('user_id', '=', Auth::id())->get()
         ]);
     }
 
